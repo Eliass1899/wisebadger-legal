@@ -3,98 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiseBadger - Terms of Service</title>
+    <title>WiseBadger — Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --navy: #0D103B;
+            --magenta: #9A2099;
+            --pink: #E592CA;
+            --cream: #F0EAEA;
+            --text-primary: #F0EAEA;
+            --text-secondary: rgba(240, 234, 234, 0.75);
+            --text-tertiary: rgba(240, 234, 234, 0.5);
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #1a1025;
-            color: #e0d6ec;
-            line-height: 1.7;
-            padding: 40px 20px;
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--navy);
+            background-image:
+                radial-gradient(ellipse 80% 50% at 50% 0%, rgba(154, 32, 153, 0.2), transparent 60%),
+                linear-gradient(180deg, var(--navy) 0%, #0A0D2F 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.75;
+            min-height: 100vh;
+            padding: 60px 20px;
         }
         .container {
-            max-width: 720px;
+            max-width: 760px;
             margin: 0 auto;
         }
-        h1 {
-            color: #c9a0dc;
-            font-size: 28px;
-            margin-bottom: 8px;
-        }
-        .last-updated {
-            color: #8a7a9a;
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--pink);
+            text-decoration: none;
+            font-weight: 600;
             font-size: 14px;
             margin-bottom: 32px;
         }
-        h2 {
-            color: #c9a0dc;
-            font-size: 20px;
-            margin-top: 32px;
+        .back-link:hover { text-decoration: underline; }
+        h1 {
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--pink) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.02em;
+        }
+        .last-updated {
+            color: var(--text-tertiary);
+            font-size: 14px;
+            font-weight: 500;
             margin-bottom: 12px;
         }
-        p {
-            margin-bottom: 16px;
-            color: #d0c6dc;
+        .intro {
+            color: var(--text-secondary);
+            font-size: 16px;
+            margin-bottom: 40px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(229, 146, 202, 0.15);
         }
-        .contact-info {
-            background: #2a1f35;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 24px;
+        h2 {
+            color: var(--pink);
+            font-size: 22px;
+            font-weight: 800;
+            margin-top: 40px;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
         }
-        .contact-info p {
+        h3 {
+            color: var(--cream);
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
             margin-bottom: 8px;
         }
-        a {
-            color: #c9a0dc;
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 14px;
         }
+        strong { color: var(--cream); font-weight: 700; }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        li {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+        .contact-card {
+            background: linear-gradient(135deg, rgba(154, 32, 153, 0.15), rgba(229, 146, 202, 0.05));
+            border: 1px solid rgba(229, 146, 202, 0.25);
+            border-radius: 16px;
+            padding: 28px;
+            margin-top: 32px;
+        }
+        .contact-card h2 { margin-top: 0; }
+        .contact-card p { margin-bottom: 10px; }
+        a { color: var(--pink); font-weight: 600; }
+        .notice {
+            background: rgba(154, 32, 153, 0.12);
+            border-left: 3px solid var(--magenta);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .notice p { margin-bottom: 0; color: var(--cream); font-size: 14px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>WiseBadger Terms of Service</h1>
-        <p class="last-updated">Last updated: May 4, 2026</p>
+        <a href="index.html" class="back-link">← Back to support</a>
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last updated: June 10, 2026</p>
 
-        <p>By downloading, installing, or using WiseBadger ("the app"), you agree to be bound by these Terms of Service. If you do not agree, do not use the app.</p>
+        <p class="intro">These Terms of Service ("Terms") govern your use of the WiseBadger mobile application ("the app", "WiseBadger", "we", "our"). By downloading, installing, or using WiseBadger, you agree to be bound by these Terms. If you do not agree, please do not use the app.</p>
 
-        <h2>1. Description of Service</h2>
-        <p>WiseBadger is a personal budgeting application that allows you to track expenses, manage recurring payments, set savings goals, and receive AI-generated financial commentary. The app is provided for personal, non-commercial use.</p>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By creating an account or using WiseBadger in any capacity, you confirm that you have read, understood, and agreed to these Terms and to our Privacy Policy. These Terms form a legally binding agreement between you and the WiseBadger team. If you are using the app on behalf of an organization, you represent that you have the authority to bind that organization to these Terms.</p>
 
-        <h2>2. Account Registration</h2>
-        <p>To use WiseBadger, you must create an account with a valid email address. You are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account. You agree to provide accurate and complete information when creating your account.</p>
+        <h2>2. Eligibility</h2>
+        <p>You must be at least 13 years old (or 16 in the European Economic Area) to use WiseBadger. By using the app you represent that you meet these age requirements and that the information you provide is accurate and truthful. We reserve the right to suspend or terminate accounts that violate these eligibility requirements.</p>
 
-        <h2>3. Acceptable Use</h2>
-        <p>You agree not to misuse the app. This includes but is not limited to: attempting to access other users' data, reverse engineering the app, using automated systems to interact with the app, or using the app for any illegal purpose.</p>
+        <h2>3. Your Account</h2>
+        <p>You are responsible for:</p>
+        <ul>
+            <li>Maintaining the confidentiality of your account credentials</li>
+            <li>All activity that occurs under your account</li>
+            <li>Notifying us immediately of any unauthorized access</li>
+            <li>Ensuring the accuracy of the information you provide</li>
+        </ul>
+        <p>We are not liable for any loss or damage arising from your failure to safeguard your account. You may not share your account with others, create accounts on behalf of others without consent, or use another person's account.</p>
 
-        <h2>4. AI Chat Feature Disclaimer</h2>
-        <p>WiseBadger includes an AI chatbot (Badger AI) that provides general financial commentary in a philosophical and entertaining tone. This feature is for informational and entertainment purposes only. The AI responses do not constitute financial advice, investment advice, tax advice, or any other professional advice. You should not make financial decisions based solely on information provided by Badger AI. Always consult a qualified financial professional for advice specific to your situation.</p>
+        <h2>4. Acceptable Use</h2>
+        <p>You agree to use WiseBadger only for lawful, personal, non-commercial purposes. You agree not to:</p>
+        <ul>
+            <li>Reverse engineer, decompile, or attempt to extract source code from the app</li>
+            <li>Use the app to violate any applicable law or regulation</li>
+            <li>Attempt to gain unauthorized access to our servers, systems, or other users' accounts</li>
+            <li>Interfere with, disrupt, or place an unreasonable load on the service</li>
+            <li>Use automated systems (bots, scrapers, crawlers) to access the app</li>
+            <li>Submit false, misleading, or fraudulent information</li>
+            <li>Use the app to send spam, malware, or other harmful content</li>
+            <li>Impersonate any person or misrepresent your affiliation with any person or entity</li>
+        </ul>
+        <p>Violation of these rules may result in immediate termination of your account.</p>
 
-        <h2>5. Financial Data</h2>
-        <p>WiseBadger is a tool to help you organize and track your personal finances. The accuracy of the data in the app depends entirely on the information you enter. We are not responsible for any financial decisions you make based on information displayed in the app. Currency conversion rates are provided by a third-party service and may not reflect real-time market rates.</p>
+        <h2>5. Financial Information Disclaimer</h2>
+        <div class="notice">
+            <p><strong>WiseBadger is a personal budgeting tool, not a financial advisor.</strong></p>
+        </div>
+        <p>The information, AI-generated advice, philosophical insights, and reports provided by WiseBadger — including those generated by Badger AI — are for general informational, educational, and entertainment purposes only. They do not constitute and should not be relied upon as financial, investment, tax, legal, or accounting advice.</p>
+        <p>You should always consult a qualified, licensed professional before making significant financial decisions. WiseBadger and its developers are not responsible for any financial losses, missed opportunities, or other damages resulting from decisions you make based on the app's content.</p>
 
-        <h2>6. Intellectual Property</h2>
-        <p>All content, design, graphics, and code in WiseBadger are owned by the developer and are protected by applicable intellectual property laws. The WiseBadger name, logo, and badger mascot are trademarks of the developer. You may not copy, modify, distribute, or create derivative works based on the app without prior written permission.</p>
+        <h2>6. AI-Generated Content</h2>
+        <p>Badger AI uses Anthropic's Claude language model to generate responses. AI-generated content can sometimes be inaccurate, incomplete, biased, or otherwise inappropriate. You acknowledge and agree that:</p>
+        <ul>
+            <li>AI responses are generated automatically and may contain errors</li>
+            <li>You should not rely on AI responses as authoritative financial guidance</li>
+            <li>We do not endorse or warrant any specific AI-generated output</li>
+            <li>You use AI features at your own risk and judgment</li>
+        </ul>
 
-        <h2>7. Account Deletion</h2>
-        <p>You may delete your account at any time through the app's Settings. Upon deletion, all your data will be permanently removed from our servers. We reserve the right to suspend or terminate accounts that violate these terms.</p>
+        <h2>7. Intellectual Property</h2>
+        <p>All content provided by WiseBadger — including the app, its design, name, logo, badger character, illustrations, code, and written content — is owned by the WiseBadger team and protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, sell, lease, or create derivative works from any part of the app without our written permission.</p>
+        <p>You retain all rights to the content you enter into the app (transactions, descriptions, notes, etc.). By using the app you grant us a limited, non-exclusive license to store, process, and display this content solely for the purpose of providing the service to you.</p>
 
-        <h2>8. Limitation of Liability</h2>
-        <p>WiseBadger is provided "as is" without warranties of any kind, either express or implied. To the maximum extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data arising out of your use of the app.</p>
+        <h2>8. Pricing and Premium Features</h2>
+        <p>WiseBadger is currently offered free of charge. We may introduce optional premium features or subscriptions in the future. If we do, the core features available at the time you created your account will remain free, and any new paid features will be clearly identified before purchase. Premium subscriptions, if introduced, will be managed through the Apple App Store and governed by Apple's subscription terms in addition to these Terms.</p>
 
-        <h2>9. Availability</h2>
-        <p>We do not guarantee that the app will be available at all times. We may suspend or discontinue the app or any part of it at any time without notice. We are not liable for any interruption or unavailability of the service.</p>
+        <h2>9. Service Availability</h2>
+        <p>We strive to keep WiseBadger available at all times but cannot guarantee uninterrupted service. The app may be temporarily unavailable due to:</p>
+        <ul>
+            <li>Scheduled maintenance and updates</li>
+            <li>Server issues or third-party service outages (e.g. Supabase, Anthropic, Google)</li>
+            <li>Internet connectivity problems on your end</li>
+            <li>Events outside our reasonable control (force majeure)</li>
+        </ul>
+        <p>We are not liable for any loss or inconvenience caused by service interruptions. We may also modify, suspend, or discontinue features at any time, with reasonable notice where practical.</p>
 
-        <h2>10. Changes to These Terms</h2>
-        <p>We may update these terms from time to time. Any changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the updated terms.</p>
+        <h2>10. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, WiseBadger and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages — including loss of profits, data, savings, or opportunities — arising out of or related to your use of the app, even if we have been advised of the possibility of such damages.</p>
+        <p>Our total cumulative liability to you for any claim arising from these Terms or your use of the app shall not exceed the greater of (a) the amount you have paid us in the 12 months preceding the claim, or (b) USD $50.</p>
+        <p>Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability for incidental or consequential damages, so some of the above limitations may not apply to you.</p>
 
-        <h2>11. Governing Law</h2>
-        <p>These terms shall be governed by and construed in accordance with the laws of Lebanon, without regard to its conflict of law provisions.</p>
+        <h2>11. Disclaimer of Warranties</h2>
+        <p>WiseBadger is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, accuracy, or non-infringement. We do not warrant that the app will be error-free, secure, or uninterrupted, or that any defects will be corrected.</p>
 
-        <h2>12. Contact Us</h2>
-        <div class="contact-info">
-            <p>If you have any questions about these terms, contact us at:</p>
-            <p><strong>Email:</strong> eliasmatar22@gmail.com</p>
+        <h2>12. Account Termination</h2>
+        <p>You may delete your account at any time from the Settings screen. We may suspend or terminate your account if you violate these Terms, abuse the service, or engage in fraudulent or illegal activity. Upon termination, your access to the app will cease and your data will be deleted as described in our Privacy Policy.</p>
+
+        <h2>13. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time to reflect changes in our practices, features, or legal requirements. Any changes will be reflected on this page with an updated "Last updated" date. For material changes we will provide notice through the app or by email. Your continued use of WiseBadger after the updated Terms take effect constitutes acceptance of the new Terms.</p>
+
+        <h2>14. Governing Law</h2>
+        <p>These Terms are governed by the laws of Lebanon, without regard to its conflict of law principles. Any dispute arising out of or related to these Terms shall be resolved in the competent courts of Lebanon. If you are a consumer in the European Union, you also have the right to rely on the mandatory consumer protection laws of your country of residence.</p>
+
+        <h2>15. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable or invalid, the remaining provisions will continue in full force and effect. Our failure to enforce any right or provision shall not constitute a waiver of that right or provision.</p>
+
+        <div class="contact-card">
+            <h2>16. Contact Us</h2>
+            <p>For questions about these Terms, contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:WiseBadger@proton.me">WiseBadger@proton.me</a></p>
             <p><strong>Developer:</strong> WiseBadger Team</p>
         </div>
     </div>
